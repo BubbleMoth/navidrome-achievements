@@ -18,13 +18,6 @@ Requires Navidrome with plugin support enabled.
 3. Restart Navidrome if necessary.
 4. Enable the plugin from **Settings -> Plugins** and grant it access to the desired users.
 
-To build the the .ndp file:
-```git clone https://github.com/BubbleMoth/navidrome-achievements.git
-cd navidrome-achievements
-
-tinygo build -target=wasi -scheduler=none -o plugin.wasm .
-tar -cf achievements.ndp manifest.json plugin.wasm```
-
 ## Achievements
 
 Current achievements include:
