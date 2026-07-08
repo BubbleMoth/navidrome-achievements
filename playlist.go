@@ -58,7 +58,7 @@ func buildComment(unlocked map[string]int64) string {
 	const maxLen = 3000 // keep it well under typical text-column limits
 	for _, e := range entries {
 		when := time.Unix(e.ts, 0).UTC().Format("2006-01-02")
-		line := fmt.Sprintf("🏆 %s %s (%s)\n", e.a.Name, e.a.Description, when)
+		line := fmt.Sprintf("%s: %s (%s)\n", e.a.Name, e.a.Description, when)
 		if b.Len()+len(line) > maxLen {
 			b.WriteString("…and more!")
 			break
