@@ -5,7 +5,6 @@ A Navidrome plugin that unlocks achievements based on your listening history.
 ## Features
 
 - Listening milestones
-- Artist, album, and track achievements
 - Listening streaks
 - Time-of-day achievements
 - Progress stored per user
@@ -41,12 +40,3 @@ Current achievements include:
 - Seven-Day Spin: Listen to music 7 days in a row.
 - Habit Formed: Listen to music 30 days in a row.
 - Extended Play: Scrobble a track 10 minutes or longer.
-
-More achievements are planned.
-
-## Roadmap
-
-- More achievements
-- Notifications
-- Better achievement viewing
-- Reset achievements
