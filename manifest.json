@@ -1,0 +1,31 @@
+{
+  "name": "Achievements",
+  "author": "bubblemoth",
+  "version": "1.0.0",
+  "description": "A Navidrome plugin that tracks listening statistics and unlocks achievements as you listen.",
+  "website": "https://github.com/BubbleMoth/navidrome-achievements",
+  "config": {
+    "schema": {
+      "type": "object",
+      "properties": {
+        "log_unlocks": {
+          "type": "boolean",
+          "title": "Log achievement unlocks to the Navidrome server log",
+          "default": true
+        }
+      }
+    }
+  },
+  "permissions": {
+    "users": {
+      "reason": "Receive scrobble events for assigned users and track per-user achievement progress"
+    },
+    "kvstore": {
+      "reason": "Persist user's listening stats and unlocked achievements across restarts",
+      "maxSize": "5MB"
+    },
+    "subsonicapi": {
+      "reason": "Create/update a per-user \"Achievements\" playlist to display unlocked achievements"
+    }
+  }
+}
